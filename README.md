@@ -56,3 +56,13 @@ Se preferisci un file .py, copia/incolla il cuore del loop:
 
 <img width="397" alt="image" src="https://github.com/user-attachments/assets/cef52190-56e5-4bf0-b2cb-30d34a8c3b0e" />
 
+## Struttura del progetto
+
+.
+├── data/
+│   └── sidewalk.mp4        # clip di esempio (~10 s)
+├── pedestrian_cam.ipynb     # notebook principale
+├── pedestrian_cam.png       # screenshot demo (usato nel README)
+├── requirements.txt
+└── README.md               # questo file
+
