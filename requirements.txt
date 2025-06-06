@@ -1,0 +1,10 @@
+# Core dependencies for pedestrian_cam.ipynb
+ultralytics>=8.2.0
+opencv-python>=4.9.0
+matplotlib>=3.8.0
+ipython>=8.10.0
+
+# Optional: enable GPU acceleration (comment out if not needed)
+# torch>=2.2.0+cu121
+# torchvision>=0.17.0+cu121
+# torchaudio>=2.2.0+cu121
