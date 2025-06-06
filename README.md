@@ -32,7 +32,7 @@ Se non usi una GPU NVIDIA puoi ignorare PyTorch/CUDA: YOLOv8 funziona anche so
 
 ## Installazione
 #### 1. Clona il repo
-git clone https://github.com/<tuo‑utente>/pedestrian‑cam.git
+git clone https://github.com/giuseppemaiorano/pedestrian‑cam.git
 cd pedestrian‑cam
 
 #### 2. Crea un ambiente virtuale (opzionale ma consigliato)
