@@ -1,1 +1,1 @@
-🚶‍♂️ #Pedestrian Cam — YOLOv8 demo
+#🚶‍♂️ Pedestrian Cam — YOLOv8 demo
