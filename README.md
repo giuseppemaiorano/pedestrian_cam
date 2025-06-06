@@ -31,7 +31,7 @@ OpenCV ≥ 4.9
 Se non usi una GPU NVIDIA puoi ignorare PyTorch/CUDA: YOLOv8 funziona anche soltanto su CPU (più lento).
 
 ## Installazione
-# 1. Clona il repo
+#### 1. Clona il repo
 git clone https://github.com/<tuo‑utente>/pedestrian‑cam.git
 cd pedestrian‑cam
 
