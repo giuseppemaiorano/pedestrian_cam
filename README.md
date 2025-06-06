@@ -72,4 +72,5 @@ Distribuito sotto licenza MIT. Puoi usarlo, modificarlo e ridistribuirlo liberam
 
 ## Ringraziamenti
 Ultralytics per il fantastico YOLOv8
+
 OpenCV per l’ecosistema computer‑vision
