@@ -54,18 +54,5 @@ Regola conf=0.35 se vuoi più/meno rilevamenti.
 ### 2. Esecuzione da terminale (facoltativa)
 Se preferisci un file .py, copia/incolla il cuore del loop:
 
-from ultralytics import YOLO
-import cv2, time
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/cef52190-56e5-4bf0-b2cb-30d34a8c3b0e" />
 
-model = YOLO("yolov8n.pt")
-cap = cv2.VideoCapture(0)  # 0 = web‑cam di default
-
-while True:
-    ret, frame = cap.read()
-    if not ret:
-        break
-
-    annotated = model(frame, imgsz=640, conf=0.35)[0].plot()
-    cv2.imshow("Pedestrian‑Cam", annotated)
-    if cv2.waitKey(1) & 0xFF == 27:  # ESC
-        break
