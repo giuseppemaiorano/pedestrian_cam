@@ -1,10 +1,10 @@
-📹 #Pedestrian Cam — rilevamento pedoni in tempo reale con YOLOv8
+📹 Pedestrian Cam — rilevamento pedoni in tempo reale con YOLOv8
 
 Pedestrian Cam è un semplice progetto dimostrativo che usa Ultralytics YOLOv8 per individuare pedoni all’interno di un flusso video (web‑cam o file). Il notebook pedestrian_cam.ipynb mostra passo‑passo come installare i pacchetti necessari, caricare il modello e visualizzare le bounding box in sovra‑impressione, il tutto in (quasi) real‑time.
 
 Perché yolov8n? È il modello più leggero della famiglia, quindi gira agevolmente anche su CPU e su GPU di fascia media pur mantenendo una buona accuratezza.
 
-✨ # Caratteristiche
+✨  Caratteristiche
 
 ⚡️ Inference tempo‑reale (≈ 30 fps su GPU consumer)
 
@@ -14,7 +14,7 @@ Perché yolov8n? È il modello più leggero della famiglia, quindi gira agevolme
 
 🔧 Parametri facilmente modificabili (conf, imgsz, modello, ecc.)
 
-🧰 # Requisiti
+🧰  Requisiti
 
 Software Versione consigliata
 
@@ -39,3 +39,42 @@ source .venv/bin/activate   # su Windows: .venv\Scripts\activate
 
 # 3. Installa le dipendenze
 pip install -r requirements.txt
+
+Se non vuoi usare requirements.txt, puoi installare "a mano":
+
+pip install ultralytics opencv-python
+# (facoltativo, solo per GPU NVIDIA)
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+▶️ Come si usa
+
+1. Notebook Jupyter (consigliato per la prima prova)
+   
+ jupyter lab  # oppure jupyter notebook
+
+Apri pedestrian_cam.ipynb e segui le celle dall’alto verso il basso.
+Imposta video_path su data/sidewalk.mp4 oppure 0 per la web‑cam.
+Regola conf=0.35 se vuoi più/meno rilevamenti.
+
+2. Esecuzione da terminale (facoltativa)
+
+Se preferisci un file .py, copia/incolla il cuore del loop:
+from ultralytics import YOLO
+import cv2, time
+
+model = YOLO("yolov8n.pt")
+cap = cv2.VideoCapture(0)  # 0 = web‑cam di default
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    annotated = model(frame, imgsz=640, conf=0.35)[0].plot()
+    cv2.imshow("Pedestrian‑Cam", annotated)
+    if cv2.waitKey(1) & 0xFF == 27:  # ESC
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+
