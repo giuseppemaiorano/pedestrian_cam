@@ -57,12 +57,18 @@ Se preferisci un file .py, copia/incolla il cuore del loop:
 <img width="397" alt="image" src="https://github.com/user-attachments/assets/cef52190-56e5-4bf0-b2cb-30d34a8c3b0e" />
 
 ## Struttura del progetto
+<img width="385" alt="image" src="https://github.com/user-attachments/assets/23a1af87-0bc4-484a-a9a5-70e220e0efdd" />
 
-.
-├── data/
-│   └── sidewalk.mp4        # clip di esempio (~10 s)
-├── pedestrian_cam.ipynb     # notebook principale
-├── pedestrian_cam.png       # screenshot demo (usato nel README)
-├── requirements.txt
-└── README.md               # questo file
+## Personalizzazione rapida
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/9cf67019-5d9e-4eb0-bf89-c9515f501434" />
 
+##  Performance attese
+<img width="319" alt="image" src="https://github.com/user-attachments/assets/ecb8ea08-67a9-4d7d-bb6a-2c121be2291c" />
+I valori sono indicativi: cambiano in base a driver, risoluzione e carico di sistema.
+
+## Licenza
+Distribuito sotto licenza MIT. Puoi usarlo, modificarlo e ridistribuirlo liberamente citando l’autore originale.
+
+## Ringraziamenti
+Ultralytics per il fantastico YOLOv8
+OpenCV per l’ecosistema computer‑vision
