@@ -16,7 +16,7 @@ Perché yolov8n? È il modello più leggero della famiglia, quindi gira agevolme
 
 🔧 Parametri facilmente modificabili (conf, imgsz, modello, ecc.)
 
-## Requisiti
+##  Requisiti
 
 Software Versione consigliata
 
