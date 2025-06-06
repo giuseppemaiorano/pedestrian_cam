@@ -1,1 +1,1 @@
-# Pedestrian Cam — YOLOv8 demo
+# Pedestrian Cam — rilevamento pedoni in tempo reale con YOLOv8
