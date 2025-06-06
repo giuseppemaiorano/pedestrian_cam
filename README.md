@@ -64,6 +64,7 @@ Se preferisci un file .py, copia/incolla il cuore del loop:
 
 ##  Performance attese
 <img width="319" alt="image" src="https://github.com/user-attachments/assets/ecb8ea08-67a9-4d7d-bb6a-2c121be2291c" />
+
 I valori sono indicativi: cambiano in base a driver, risoluzione e carico di sistema.
 
 ## Licenza
