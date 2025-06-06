@@ -35,11 +35,11 @@ Se non usi una GPU NVIDIA puoi ignorare PyTorch/CUDA: YOLOv8 funziona anche so
 git clone https://github.com/<tuo‑utente>/pedestrian‑cam.git
 cd pedestrian‑cam
 
-# 2. Crea un ambiente virtuale (opzionale ma consigliato)
+#### 2. Crea un ambiente virtuale (opzionale ma consigliato)
 python -m venv .venv
 source .venv/bin/activate   # su Windows: .venv\Scripts\activate
 
-# 3. Installa le dipendenze
+#### 3. Installa le dipendenze
 pip install -r requirements.txt
 
 Se non vuoi usare requirements.txt, puoi installare "a mano":
